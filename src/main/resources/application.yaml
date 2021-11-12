@@ -1,0 +1,22 @@
+server:
+  port: 8093
+
+spring:
+
+  datasource:
+    url: jdbc:sqlserver://unmsm-server.database.windows.net:1433;databaseName=universidad
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    platform: mssql
+    username: yanpieer
+    password: Romerosalazar13
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.SQLServer2012Dialect
+    properties:
+      hibernate:
+        show_sql: true
+        use_sql_comments: false
+        format_sql: true
